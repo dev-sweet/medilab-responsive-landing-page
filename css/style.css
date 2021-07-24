@@ -1,0 +1,67 @@
+/* --------------------------
+-----------header styles----------
+------------------------------ */
+.navbar-bg{
+    background-color: #fff;
+}
+.navbar .navbar-brand.navbar-btn{
+    color:#2c4964;
+    font-size: 30px;
+    font-weight: 700;
+
+}
+.navbar-nav .nav-item .nav-link.my-link{
+    color: #2c4964;
+    transition:.3s;
+    padding-bottom: 0;
+}
+.navbar-nav .nav-item .nav-link.my-link:after {
+    position: relative;
+    top:4px;
+    content: "";
+    display: block;
+    border-bottom: 2px solid;
+    border-color: white;
+    transition:.4s ;
+}
+.navbar-nav .nav-item .nav-link.my-link:hover{
+    color: #1977cc; 
+}
+.navbar-nav .nav-item .nav-link.my-link:hover::after{
+    border-color: #1977cc;
+}
+.navbar-nav .nav-item .nav-link.my-link.active{
+    color: #1977cc;
+}
+.navbar-nav .nav-item .nav-link.my-link.active::after{
+    border-color: #1977cc;
+}
+.nav-link.dropdown-toggle{
+    color:#2c4964;
+}
+.nav-link.dropdown-toggle::before {
+    position: relative;
+    top:28px;
+    content: "";
+    display: block;
+    height:1.4px;
+    background-color: white;
+    border: none;
+    transition:.4s ;
+}
+.nav-link.dropdown-toggle:hover::before {
+   background-color: #1977cc;
+}
+.appointment-btn{
+    font-size: 14px;
+}
+.menu-btn{
+    font-size: 25px;
+    color: #2c4964;
+    outline: none;
+    border: none;
+    background: none;
+}
+.offcanvas-body .nav-link.dropdown-toggle{
+    color:#1977cc;
+}
