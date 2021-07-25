@@ -1,3 +1,34 @@
+/* reusable compontents */
+.section-title{
+    padding-bottom: 20px;
+}
+.section-title h2 {
+    position: relative;
+    text-align: center;
+    color: #2c4964;
+    margin-bottom: 38px;
+}
+
+.section-title h2::after {
+    content: "";
+    width: 45px;
+    background-color: rgb(25, 119, 204);
+    height: 3px;
+    display: block;
+    position: absolute;
+    top: 55px;
+    left: calc(50% - 20px);
+}
+.section-title h2::before {
+    content: "";
+    width: 120px;
+    background-color: silver;
+    height: 1px;
+    display: block;
+    position: absolute;
+    top: 56px;
+    left: calc(50% - 60px);
+}
 /* --------------------------
 -----------header styles----------
 ------------------------------ */
@@ -192,4 +223,70 @@
     border-radius: 50%;
     position:relative;
     top:-44px;
+}
+/* ----------------------
+---------services section--------
+---------------------------- */
+.service-box {
+    border: 1px solid #d5e1ed;
+    padding: 85px 25px;
+    text-align: center;
+    transition: .4s;
+}
+.service-box:hover{
+    background-color: #1977cc;
+}
+.service-box:hover .service-icon{
+    background-color: #fff;
+}
+.service-box:hover .service-icon i{
+    color: #1977cc;
+}
+.service-box h4 {
+    color: #2c4964;
+    font-size: 25px;
+    font-weight: 700;
+}
+.service-icon h4{
+    transition: .4s;
+}
+.service-icon p{
+    transition: .4s;
+}
+
+.service-box:hover h4{
+    color: #fff;
+}
+.service-box:hover p{
+    color: #fff;
+}
+.service-icon {
+    width: 70px;
+    height: 70px;
+    margin: auto;
+    background: #1977cc;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    position: relative;
+    transition: .4s;
+}
+.service-box .service-icon::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: #badaf7;
+    border-radius: 5px;
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    transition: .4s;
+    z-index: -1;
+}
+.service-icon i{
+    color:white;
+    font-size: 30px;
+    transition: .3s;
 }
