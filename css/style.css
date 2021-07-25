@@ -283,10 +283,31 @@
     top: -10px;
     left: -10px;
     transition: .4s;
-    z-index: -1;
+    z-index:-1;
 }
 .service-icon i{
     color:white;
     font-size: 30px;
     transition: .3s;
 }
+/*-----------------------------
+------ appointment section-------- 
+--------------------------------*/
+#appointment{
+    background-color:#f1f7fd;
+}
+.my-form {
+    border-radius: 0;
+    padding: 8px;
+    outline: none;
+}
+
+.my-form:focus {
+    border: 1px solid #0000ce;
+    outline: none;
+    box-shadow: none;
+}
+
+/* --------------------
+----------Departments------- 
+-------------------------*/
