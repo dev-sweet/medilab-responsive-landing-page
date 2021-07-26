@@ -426,9 +426,43 @@ button.accordion-button:focus{
     padding-top: 0px;
 }
 
-
-
-
+/* -----------------------
+---------gallery section-----------
+--------------------------- */
+.gallery-img{
+    overflow: hidden;
+}
+.gallery-img:hover img{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.gallery-img img{
+    transition: transform ease-out 1.3s;
+}
+/* --------------------------------
+-----------contact section--------------
+------------------------------------- */
+.gmaps{
+    width: 100%;
+    height: 300px;
+}
+.gmaps iframe{
+    width: 100%;
+    height: 100%;
+}
+#contact .icon {
+    padding: 7px 12px;
+    border-radius: 50%;
+    margin-right: 24px;
+    font-size: 20px;
+    border: none;
+    background: #d6e9fa;
+    color: rgb(25, 119, 204);
+}
+#contact .about-icon:hover .icon{
+    background-color: #1977cc;
+    color:white;
+}
 /* ---------------------------------------
 --------------for responsive devices---------------
 ------------------------------------------ */
