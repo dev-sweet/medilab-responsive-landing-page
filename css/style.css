@@ -35,6 +35,9 @@ body,html{
 /* --------------------------
 -----------header styles----------
 ------------------------------ */
+header#header {
+    border-bottom: 1px solid #09090929;
+}
 .navbar-bg{
     background-color: #fff;
 }
